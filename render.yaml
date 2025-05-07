@@ -2,6 +2,5 @@ services:
   - type: web
     name: exemple-memoire
     runtime: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
-    env: python
+    buildCommand: "cd EXEMPLE_MEMOIRE && pip install -r requirements.txt"
+    startCommand: "cd EXEMPLE_MEMOIRE && gunicorn app:app"
